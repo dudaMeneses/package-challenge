@@ -36,4 +36,14 @@ public class PackerTest {
         assertEquals("4\n-\n2,7\n8,9", result);
     }
 
+    @Test(expected = APIException.class)
+    public void pack_whenMoreThan15Items_shouldThrowAPIException(){
+        Packer.pack("./more-than-15-file.txt");
+    }
+
+    @Test(expected = APIException.class)
+    public void pack_whenItemHasInvalidFormat_shouldThrowAPIException(){
+        Packer.pack("./invalid-parsing-line.txt");
+    }
+
 }

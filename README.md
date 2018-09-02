@@ -17,8 +17,9 @@ Once we had the entities and only some of their fields were interesting for our 
 ## Algorithm - Combination:
 Combination algorithm basically does what we need: try all combinations of elements following some specific rule.
 
-## Data Structure - Set
+## Data Structure - Set, Array and Matrix
 We don't have repeated items in our combinations, so I believe that a `Set` fits well with picked algorithm.
+For the algorithm itself I used an array of arrays (`matrix`) to store the items values and `arrays` to iterate them.
 
 ## Design Pattern - Flyweight
 I already have many fine grained objects (items with their own specific information) which will operate individually alone, but I want them together to operate as a Pack, in this case, so I considered it the ideal structural pattern.
