@@ -1,4 +1,4 @@
-package com.mobiquityinc.entities;
+package com.mobiquityinc.model;
 
 import com.google.common.base.Joiner;
 import com.google.common.collect.Ordering;
